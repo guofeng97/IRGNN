@@ -5,12 +5,6 @@ from torch import Tensor, nn
 
 
 class ContourResidual(nn.Module):
-\
-\
-\
-\
-\
-
 
     def __init__(self, cap: float = 0.06, band: str = "shoulder") -> None:
         super().__init__()

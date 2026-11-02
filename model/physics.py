@@ -1,23 +1,3 @@
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-
-
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -165,13 +145,6 @@ def physics_node_features(
     coarse_bins: tuple[int, ...] = DEFAULT_COARSE_BINS,
     eps: float = 1.0e-30,
 ) -> Tensor:
-\
-\
-\
-\
-\
-\
-\
 
 
     if values is None:

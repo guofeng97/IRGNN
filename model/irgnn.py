@@ -385,12 +385,6 @@ class IRGNN(nn.Module):
         return h
 
     def _residual_scale(self, node_feat: Tensor, batch: Tensor) -> Tensor:
-\
-\
-\
-\
-\
-
 
         if self.residual_scale_mode != "design":
             return torch.as_tensor(
@@ -471,12 +465,6 @@ class IRGNN(nn.Module):
         return self._forward_unrolled(data, system, return_dict=return_dict)
 
     def _forward_unrolled(self, data, system, return_dict: bool = False):
-\
-\
-\
-\
-\
-\
 
 
         from .physics import physics_node_features
