@@ -17,13 +17,6 @@ def _ensure_batch(x: Tensor, batch: Tensor | None) -> Tensor:
 
 
 class CoarseFieldHead(nn.Module):
-\
-\
-\
-\
-\
-\
-
 
     def __init__(self, channels: int, bins: int = 32, dropout: float = 0.0) -> None:
         super().__init__()
@@ -83,14 +76,6 @@ def _graph_feature_max(values: Tensor, batch: Tensor, eps: float) -> Tensor:
 
 
 class IRGraphFeatureAdapter(nn.Module):
-\
-\
-\
-\
-\
-\
-\
-\
 
 
     def __init__(
@@ -170,11 +155,6 @@ class IRGraphFeatureAdapter(nn.Module):
 
 
 class IRGNN(nn.Module):
-\
-\
-\
-\
-\
 
 
     def __init__(

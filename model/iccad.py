@@ -62,11 +62,6 @@ def load_npz_graph(
     physics_cache_dir: str | Path | None = None,
     physics_sweeps: tuple[int, ...] | None = None,
 ) -> Data:
-\
-\
-\
-\
-\
 
 
     payload = np.load(path, allow_pickle=True)
@@ -175,11 +170,6 @@ def list_graph_paths(
 
 
 class ICCADGraphDataset(Dataset):
-\
-\
-\
-\
-\
 
 
     def __init__(
@@ -313,20 +303,9 @@ def resize_grid(
 
 
 CSV_GRID_PITCH = 2000.0
-\
-\
-\
-\
-\
-\
-\
 
 
 def _fractional_index(values: Tensor, query: Tensor) -> Tensor:
-\
-\
-\
-\
 
 
     values = values.to(dtype=torch.float64)
@@ -413,11 +392,6 @@ def iccad_target_on_nodes(
     spec: LayerGridSpec | None = None,
     pitch: float = CSV_GRID_PITCH,
 ) -> tuple[Tensor, Tensor]:
-\
-\
-\
-\
-\
 
 
     if spec is None:
@@ -516,27 +490,6 @@ def iccad_grid_loss(
     align: Literal["csv", "native"] = "csv",
     eps: float = 1.0e-12,
 ) -> Tensor:
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 
 
     target = torch.as_tensor(target_grid, device=pred_node.device, dtype=pred_node.dtype)
@@ -614,10 +567,6 @@ def iccad_node_loss(
     valid_mask: Tensor | None = None,
     eps: float = 1.0e-12,
 ) -> Tensor:
-\
-\
-\
-\
 
 
     if pred_node.dim() == 2 and pred_node.size(-1) == 1:
@@ -785,10 +734,6 @@ def ir_drop_kcl_residual(
     resistance: Tensor,
     eps: float = 1.0e-12,
 ) -> Tensor:
-\
-\
-\
-\
 
 
     if drop.dim() == 2 and drop.size(-1) == 1:
@@ -833,11 +778,6 @@ def compute_ir_drop_metrics(
     f1_threshold: Literal["target", "separate"] = "target",
     eps: float = 1.0e-12,
 ) -> IRDropMetricResult:
-\
-\
-\
-\
-\
 
 
     pred = torch.as_tensor(pred_grid).float().flatten()

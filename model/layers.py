@@ -44,21 +44,6 @@ class MLP(nn.Module):
 
 
 class NeighborDistanceAttentionConv(MessagePassing):
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
 
 
     def __init__(
@@ -260,12 +245,6 @@ class NDABlock(nn.Module):
 
 
 class GraphTransformerLayer(nn.Module):
-\
-\
-\
-\
-\
-\
 
 
     def __init__(
